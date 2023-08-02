@@ -128,7 +128,8 @@ int main() //função principal
 		printf ("Escolha a opção desejada do menu: \n\n");
 		printf ("\t 1 - Registrar os usuários \n");
 		printf ("\t 2 - Consultar os usuários \n");
-		printf ("\t 3 - Deletar os usuários \n\n"); // fim do menu ----------  \t = espaço, \n = quebra de linha
+		printf ("\t 3 - Deletar os usuários \n"); // fim do menu ----------  \t = espaço, \n = quebra de linha
+		printf ("\t 4 - Sair do sistema \n\n");
 	
 		printf ("Digite a opção desejada: ");
 		scanf ("%d", &opcao); //scanf usado para definir onde alocar o vlr digitado; %d indica que é um vlr do tipo numero; & traz a variavel
@@ -147,6 +148,11 @@ int main() //função principal
 					
 			case 3:
 			deletar ();
+			break;
+			
+			case 4:
+			printf ("Obrigado por usar nosso sistema!");
+			return 0; //retorna o valor ZERO, quebra o laço de repetição
 			break;
 			
 			default: //caso a opção seja diferente (não definida)
